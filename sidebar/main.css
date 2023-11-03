@@ -1,0 +1,46 @@
+body {
+    background: rgb(188, 184, 184);
+}
+
+.sidebar {
+    position: relative;
+    width: 60px;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #fefefe;
+    transition: ease-in-out 0.3s;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar > hr {
+    background: #424242;
+    height: 1px;
+}
+
+.sidebar:hover>.item>.text {
+    opacity: 1;
+}
+
+i {
+    margin-left: 5px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.item>.text {
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    transition-delay: .2s;
+    margin-left: 15px;
+    white-space: nowrap;
+}
